@@ -9,7 +9,7 @@ local state = {
 
 ---Creates a centered floating window in Neovim
 ---@param opts table|nil Optional parameters: { width = number, height = number }
----@return table
+---@return { buf: number, win: number }
 local function create_floating_window(opts)
   opts = opts or {}
 
@@ -72,4 +72,7 @@ vim.api.nvim_create_user_command('Fterm', toggle_terminal, {})
 
 vim.keymap.set({ 'n', 't' }, '<space>ft', toggle_terminal)
 
--- to execute: :source ~/.config/nvim/lua/custom/plugins/floating-terminal.lua
+-- We return an empty table to satisfy lazy.nvim's plugin spec requirement.
+-- Since lazy.nvim loads this file to get the spec, the code above is executed,
+-- ensuring our commands and keymaps are created.
+return {}
