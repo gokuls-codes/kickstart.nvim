@@ -171,8 +171,9 @@ vim.o.confirm = true
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
--- Map jk to Esc in insert mode
+-- Map jk/jj to Esc in insert mode
 vim.keymap.set('i', 'jk', '<Esc>', { desc = 'Exit insert mode with jk' })
+vim.keymap.set('i', 'jj', '<Esc>', { desc = 'Exit insert mode with jj' })
 
 -- Diagnostic Config & Keymaps
 -- See :help vim.diagnostic.Opts
