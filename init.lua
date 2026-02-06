@@ -886,7 +886,7 @@ require('lazy').setup({
       ---@diagnostic disable-next-line: duplicate-set-field
       statusline.section_location = function() return '%2l:%-2v' end
 
-      require('mini.starter').setup()
+      -- require('mini.starter').setup()
       -- ... and there is more!
       --  Check out: https://github.com/nvim-mini/mini.nvim
     end,

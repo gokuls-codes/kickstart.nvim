@@ -34,6 +34,7 @@ return {
         'vim',
         'vimdoc',
         'rust',
+        'regex',
       },
     },
     config = function(_, opts)
