@@ -743,6 +743,7 @@ require('lazy').setup({
         },
         opts = {},
       },
+      'Exafunction/codeium.nvim',
     },
     --- @module 'blink.cmp'
     --- @type blink.cmp.Config
@@ -788,7 +789,15 @@ require('lazy').setup({
       },
 
       sources = {
-        default = { 'lsp', 'path', 'snippets' },
+        default = { 'lsp', 'path', 'snippets', 'codeium' },
+        providers = {
+          codeium = {
+            name = 'Windsurf',
+            module = 'codeium.blink',
+            async = true,
+            score_offset = 100,
+          },
+        },
       },
 
       snippets = { preset = 'luasnip' },
