@@ -21,6 +21,7 @@ return {
         'gosum',
         'html',
         'javascript',
+        'jsx',
         'json',
         'lua',
         'luadoc',
@@ -36,6 +37,7 @@ return {
         'rust',
         'regex',
       },
+      
     },
     config = function(_, opts)
       -- install parsers from custom opts.ensure_installed

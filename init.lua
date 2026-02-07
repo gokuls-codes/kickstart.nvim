@@ -612,7 +612,7 @@ require('lazy').setup({
         clangd = {},
         gopls = {},
         pyright = {},
-        rust_analyzer = {},
+        -- rust_analyzer = {},
         -- Some languages (like typescript) have entire language plugins that can be useful:
         --    https://github.com/pmizio/typescript-tools.nvim
         --
@@ -719,8 +719,6 @@ require('lazy').setup({
         yaml = { 'prettierd', 'prettier', stop_after_first = true },
         markdown = { 'prettierd', 'prettier', stop_after_first = true },
       },
-
-
     },
   },
 
