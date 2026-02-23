@@ -831,7 +831,7 @@ require('lazy').setup({
     config = function()
       require('catppuccin').setup {
         flavour = 'mocha', -- latte, frappe, macchiato, mocha
-        transparent_background = false, -- disables setting the background color.
+        transparent_background = true, -- disables setting the background color.
         integrations = {
           cmp = true,
           gitsigns = true,
