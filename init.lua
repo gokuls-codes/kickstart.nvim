@@ -1,4 +1,4 @@
---[[
+--[[init.l
 
 =====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
@@ -153,6 +153,11 @@ vim.o.splitbelow = true
 --   and `:help lua-guide-options`
 vim.o.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.softtabstop = 4
 
 -- Preview substitutions live, as you type!
 vim.o.inccommand = 'split'
