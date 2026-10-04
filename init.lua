@@ -814,6 +814,12 @@ require('lazy').setup({
             module = 'codeium.blink',
             async = true,
             score_offset = 100,
+            enabled = function()
+              local bufnr = vim.api.nvim_get_current_buf()
+              local name = vim.api.nvim_buf_get_name(bufnr)
+              local buftype = vim.bo[bufnr].buftype
+              return buftype == '' and name ~= '' and not name:match '^%w+://'
+            end,
           },
         },
       },
